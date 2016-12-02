@@ -51,10 +51,10 @@ $(document).ready(function () {
   
     
   (function ($) {
-
-    $('#filter').keyup(function () {
+    
+    $('#filter').keyup(function (event) {
       
-      if ($(this).val().length > 3){
+      if ($(this).val().length > 3 || event.which == 13){
         $('table').show();
         $('.spacer').hide();
         $('#home').hide();
