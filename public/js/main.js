@@ -1,6 +1,18 @@
 $(document).ready(function () {
   
-  $('table').hide();
+  $('table').show();
+  
+  $('#fww').DataTable( {
+    "lengthMenu": [[10, 25, 50], [10, 25, 50]],
+    "sDom": '<"top">rt<"bottom"lp><"clear">',
+    "order": [[ 2, "desc" ]]
+  } );
+  
+  oTable = $('#fww').DataTable();   //pay attention to capital D, which is mandatory to retrieve "api" datatables' object, as @Lionel said
+  $('#filter').keyup(function(){
+        oTable.search($(this).val()).draw() ;
+  })
+  
   
   // Load JSON file
    // $.getJSON("fww.json", function(json) {
@@ -27,59 +39,59 @@ $(document).ready(function () {
    // });
 
   
-  
-  $('#filter').focus();
-  
-  if ($(window).width() < 767){
-    $('td:nth-child(4),th:nth-child(4)').hide();
-    $('td:nth-child(5),th:nth-child(5)').hide();
-  }
-  else {
-    $('td:nth-child(4),th:nth-child(4)').show();
-    $('td:nth-child(5),th:nth-child(5)').show();
-  }
-  $(window).resize(function () {
-    if ($(window).width() < 767){
-      $('td:nth-child(4),th:nth-child(4)').hide();
-      $('td:nth-child(5),th:nth-child(5)').hide();
-    }
-    else {
-      $('td:nth-child(4),th:nth-child(4)').show();
-      $('td:nth-child(5),th:nth-child(5)').show();
-    }
-  });
-  
-    
-  (function ($) {
-    
-    $('#filter').keyup(function (event) {
-      
-      if ($(this).val().length > 3 || event.which == 13){
-        $('table').show();
-        $('.spacer').hide();
-        $('#home').hide();
-        $('#donate').hide();
-        $('#about').hide();
-        
-        var rex = new RegExp($(this).val(), 'i');
-        $('tbody tr').hide();
-        $('tbody tr').filter(function () {
-          return rex.test($(this).text());
-        }).show();
-      }
-      else {
-        $('table').hide();
-        $('.spacer').show();
-        $('#home').show();
-      }
-    })
-        
-  }(jQuery));
-    
-  $('tbody tr td').click(function() {
-    $('#filter').val($(this).html());
-    $('#filter').keyup();
-  });
+    //
+  // $('#filter').focus();
+  //
+  // if ($(window).width() < 767){
+  //   $('td:nth-child(4),th:nth-child(4)').hide();
+  //   $('td:nth-child(5),th:nth-child(5)').hide();
+  // }
+  // else {
+  //   $('td:nth-child(4),th:nth-child(4)').show();
+  //   $('td:nth-child(5),th:nth-child(5)').show();
+  // }
+  // $(window).resize(function () {
+  //   if ($(window).width() < 767){
+  //     $('td:nth-child(4),th:nth-child(4)').hide();
+  //     $('td:nth-child(5),th:nth-child(5)').hide();
+  //   }
+  //   else {
+  //     $('td:nth-child(4),th:nth-child(4)').show();
+  //     $('td:nth-child(5),th:nth-child(5)').show();
+  //   }
+  // });
+  //
+  //
+  // (function ($) {
+  //
+  //   $('#filter').keyup(function (event) {
+  //
+  //     if ($(this).val().length > 3 || event.which == 13){
+  //       $('table').show();
+  //       $('.spacer').hide();
+  //       $('#home').hide();
+  //       $('#donate').hide();
+  //       $('#about').hide();
+  //
+  //       var rex = new RegExp($(this).val(), 'i');
+  //       $('tbody tr').hide();
+  //       $('tbody tr').filter(function () {
+  //         return rex.test($(this).text());
+  //       }).show();
+  //     }
+  //     else {
+  //       $('table').hide();
+  //       $('.spacer').show();
+  //       $('#home').show();
+  //     }
+  //   })
+  //
+  // }(jQuery));
+  //
+  // $('tbody tr td').click(function() {
+  //   $('#filter').val($(this).html());
+  //   $('#filter').keyup();
+  // });
   
   
 
