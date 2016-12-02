@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     $('#filter').keyup(function () {
       
-      if ($(this).val().length > 1){
+      if ($(this).val().length > 3){
         $('table').show();
         $('.spacer').hide();
         $('#home').hide();
