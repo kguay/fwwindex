@@ -3,28 +3,28 @@ $(document).ready(function () {
   $('table').hide();
   
   // Load JSON file
-   $.getJSON("fww.json", function(json) {
-
-     // drawTable(json);
-
-     function drawTable(data) {
-       for (var i = 0; i < data.length; i++) {
-         drawRow(data[i]);
-       }
-     }
-
-     function drawRow(rowData) {
-       var row = $("<tr />");
-       $("#fww").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
-       row.append($("<td>" + rowData.Headline + "</td>"));
-       row.append($("<td>" + rowData.Author + "</td>"));
-       row.append($("<td>" + rowData.Issue + "</td>"));
-       row.append($("<td>" + rowData.Month + "</td>"));
-       row.append($("<td>" + rowData.Year + "</td>"));
-       row.append($("<td>" + rowData.Page + "</td>"));
-     }
-
-   });
+   // $.getJSON("fww.json", function(json) {
+   //
+   //   // drawTable(json);
+   //
+   //   function drawTable(data) {
+   //     for (var i = 0; i < data.length; i++) {
+   //       drawRow(data[i]);
+   //     }
+   //   }
+   //
+   //   function drawRow(rowData) {
+   //     var row = $("<tr />");
+   //     $("#fww").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+   //     row.append($("<td>" + rowData.Headline + "</td>"));
+   //     row.append($("<td>" + rowData.Author + "</td>"));
+   //     row.append($("<td>" + rowData.Issue + "</td>"));
+   //     row.append($("<td>" + rowData.Month + "</td>"));
+   //     row.append($("<td>" + rowData.Year + "</td>"));
+   //     row.append($("<td>" + rowData.Page + "</td>"));
+   //   }
+   //
+   // });
 
   
   
@@ -80,38 +80,40 @@ $(document).ready(function () {
     $('#filter').val($(this).html());
     $('#filter').keyup();
   });
-
-  $('#about').hide();
-  $('#donate').hide();
-  $('#print').hide();
   
-  // About Page
-  $('#about_link').click(function() {
-    $('.spacer').hide();
-    $('table').hide();
-    $('#home').show();
-    $('#donate').hide();
-    $('#about').show();
-    $('#print').hide();
-  });
-  // Print Page
-  $('#print_link').click(function() {
-    $('.spacer').hide();
-    $('table').hide();
-    $('#home').show();
-    $('#donate').hide();
-    $('#about').hide();
-    $('#print').show();
-  });
-  // Donate Page
-  $('#donate_link').click(function() {
-    $('.spacer').hide();
-    $('table').hide();
-    $('#home').show();
-    $('#donate').show();
-    $('#about').hide();
-    $('#print').hide();
-  });
+  
+
+  // $('#about').hide();
+  // $('#donate').hide();
+  // $('#print').hide();
+  //
+  // // About Page
+  // $('#about_link').click(function() {
+  //   $('.spacer').hide();
+  //   $('table').hide();
+  //   $('#home').show();
+  //   $('#donate').hide();
+  //   $('#about').show();
+  //   $('#print').hide();
+  // });
+  // // Print Page
+  // $('#print_link').click(function() {
+  //   $('.spacer').hide();
+  //   $('table').hide();
+  //   $('#home').show();
+  //   $('#donate').hide();
+  //   $('#about').hide();
+  //   $('#print').show();
+  // });
+  // // Donate Page
+  // $('#donate_link').click(function() {
+  //   $('.spacer').hide();
+  //   $('table').hide();
+  //   $('#home').show();
+  //   $('#donate').show();
+  //   $('#about').hide();
+  //   $('#print').hide();
+  // });
     
     
     
