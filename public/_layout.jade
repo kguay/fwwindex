@@ -1,0 +1,18 @@
+// © (copyright) 2016 Kevin C. Guay (www.kevinguay.com)
+// If you wish to copy and redistribute part of this website, please contact the webmaster.
+
+doctype html
+html
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title FineWoodworking Index
+    != partial("_include/_css")
+    != partial("_include/_js")
+  body
+    != partial("_include/_header")
+    .container
+      != yield
+    // != partial("_include/_footer")
+
+
+

@@ -1,0 +1,95 @@
+body > .container {
+//  padding-top: 60px;
+}
+
+@media (min-width: 767px) {
+  nav,
+  #navbar,
+  .container {
+    height: $navbar-height !important;
+  }
+}
+/** Bootstrap Mod **/
+.navbar {
+  min-height: $navbar-height !important;
+  background-color: $navbar-side;
+  border: 0px;
+  border-radius: 0;
+  border-radius: 0;
+//  padding-top:10px;
+}
+.navbar .container {
+  min-height:$navbar-height !important;
+  background-color: $navbar-main;
+  font-size:1.2em;
+  border: 0px;
+  
+//  margin-bottom: -2px;
+}
+
+.nav.navbar-nav > li > a {
+  font-family: caslon;
+  text-transform: capitalize !important;
+}
+
+@media (min-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    height:$navbar-height;
+  }
+  /** Navbar Nav **/
+  .nav.navbar-nav {
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+
+  .nav.navbar-nav > li > a {
+    background-color: white;
+    padding: 0;
+    padding-top: 5px;
+    padding-left:17px;
+    padding-right:17px;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{
+  background-color: white;
+}
+.nav.navbar-nav > li > a:hover,
+.nav.navbar-nav > li > a:focus {
+  background-color: white;
+  color: black !important;
+}
+
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-static-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+//.navbar-fixed-top .navbar-collapse,
+//.navbar-static-top .navbar-collapse,
+//.navbar-fixed-bottom .navbar-collapse {
+//  padding-top: 0px;
+//  padding-bottom: 0px;
+//}
+// center nav for > sm only
+@media (min-width: 767px) {
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+}

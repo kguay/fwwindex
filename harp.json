@@ -1,0 +1,22 @@
+{
+  "globals": {
+    "name": "My Website",
+    "title": "My Page",
+    "url": "https://www.example.com",
+    "description": "Description of My Website.",
+    "authors": {
+      "your_name": {
+        "name": "Your Name",
+        "email": "your@email.address",
+        "bio": "Something about you.",
+        "github": "Your github username"
+      }
+    },
+    "service": {
+      "analytics": "UA-XXXXXX-1",
+      "service": "example",
+      "prism": true
+    }
+  },
+  "domains": []
+}

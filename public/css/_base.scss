@@ -1,0 +1,112 @@
+/** Fonts **/
+@font-face {
+   font-family: caslon; 
+   src: url('/fonts/caslon-540.ttf');
+}
+@font-face {
+   font-family: glyphicons; 
+   src: url('/fonts/glyphicons-halflings-regular.ttf');
+}
+
+/** Main Elements **/
+body{
+  font-family: merriweather,arial,sans-serif;
+}
+
+/** Headers **/
+hr.header {
+  border-width: 2px; 
+  border-color: #999;
+}
+
+h1 {
+  font-family: caslon;
+  font-size: 1.7em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.2em;
+}
+
+#about_link,
+#print_link,
+#donate_link {
+  cursor: pointer;
+}
+
+h1.title > a {
+  color: #555;
+  
+  @media (min-width: 767px) {
+    font-size: 2em;
+  }
+  @media (max-width: 767px) {
+    font-size: 1.2em;
+  }
+}
+
+h1.title > a:hover {
+  text-decoration: none !important;
+}
+
+/** Tables **/
+th.sortable {
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+}
+th.sortable:hover { 
+  color: black; 
+  text-decoration:none;
+}
+th.sorted-asc, th.sorted-desc  { 
+  color: black; 
+  text-decoration:none;
+}
+
+th.sorted-asc::after { 
+    font-family: "glyphicons";
+    content:"\e113";
+    font-size: 0.9em;
+}
+
+th.sorted-desc::after { 
+    font-family: "glyphicons";
+    content:"\e114";
+    font-size: 0.9em;
+}
+
+.spacer {
+  min-height: 70px;
+}
+
+td {
+  cursor: default;
+}
+
+/** Search **/
+input.search {
+  height: 30px;
+  width: 300px;
+  padding-left: 5px;
+  color: $search-border-focus;
+//  text-align:center;
+}
+input.search:focus {
+  outline-width: 0;
+  border: 2px solid #ccc;
+  color: $search-border-focus;
+}
+
+input.search::-webkit-input-placeholder {color: #ccc;}
+input.search:-moz-placeholder {/* Firefox 18- */ color: #ccc;}
+input.search::-moz-placeholder { /* Firefox 19+ */ color: #ccc;}
+input.search:-ms-input-placeholder {color: #ccc;}
+
+input.search:focus::-webkit-input-placeholder {color: $blue;}
+input.search:focus:-moz-placeholder {/* Firefox 18- */ color: $blue;}
+input.search:focus::-moz-placeholder { /* Firefox 19+ */ color: $blue;}
+input.search:focus:-ms-input-placeholder {color: $blue;}
+

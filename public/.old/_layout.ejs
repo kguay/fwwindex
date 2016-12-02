@@ -1,0 +1,16 @@
+// © (copyright) 2016 Kevin C. Guay (www.kevinguay.com)
+// If you wish to copy and redistribute part of this website, please contact the webmaster.
+
+doctype html
+html
+  head
+    title != title
+    != partial("_include/_css")
+    != partial("_include/_js")
+  body
+    != partial("_include/_header")
+    != yield
+    != partial("_include/_footer")
+
+
+
