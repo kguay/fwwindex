@@ -1,6 +1,6 @@
 h1 Motivation
 
-p When I became seriously interested in woodworking in 2013, I started reading issues of Fine Woodworking Magazine that I found at my local library. It wasn't long before I subscribed to the magazine and since then I’ve read every recent issue. I even found a collection in my in-law’s garage dating back to the first few issues, and embarked on a reading journey. I actively use old and new issues for project plans, as I’m sure many do. However, I found that searching for specific articles was an arduous task. Until ####, Fine Woodworking published an index, sorted by subject, in the magazine once a year. Fine Woodworking kept an online index, called "Find Articles Fast", on their website until 2006 but after it was discontinued, it became difficult to quickly find articles. Thus for my own purpose, and for what I hope will benefit others, I created my own online index with the goal of providing a user-friendly, searchable index of all of the Fine Woodworking articles.
+p When I became seriously interested in woodworking in 2013, I started reading issues of Fine Woodworking Magazine that I found at my local library. It wasn't long before I subscribed to the magazine and since then I’ve read every recent issue. I even found a collection in my in-law’s garage dating back to the first few issues, and embarked on a reading journey. I actively use old and new issues for project plans, as I’m sure many do. However, I found that searching for specific articles was an arduous task. Until 2006, Fine Woodworking published an index, sorted by subject, in the magazine once a year. Fine Woodworking kept an online index, called "Find Articles Fast", on their website until 2010 but after it was discontinued, it became difficult to quickly find articles. Thus for my own purpose, and for what I hope will benefit others, I created my own online index with the goal of providing a user-friendly, searchable index of all of the Fine Woodworking articles.
 
 h1 Advertisements... or lack there of
 
@@ -9,6 +9,10 @@ p Do you see anything missing from this website? I don't like advertisements and
 h1 Donations
 
 p I have spent quite a bit of time designing, building, and populating Fine Woodworking Index with content. I pay for the domain registration and hosting out of my pocket. Any donations would go towards hosting, maintaining, and improving this website so that everyone can continue to use it.
+
+script(src='https://checkout.stripe.com/checkout.js')
+button#donate_one $1
+button#donate_ten $10
 
 h1 Print Edition (future goal)
 
@@ -36,3 +40,43 @@ p Feel free to contact me with any suggestions or comments. I manage everything 
 
 
 .big-spacer
+
+script.
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_qHSHrVaUUKoMFkMn2n95Lhu7',
+    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    locale: 'auto',
+    token: function(token) {
+      // You can access the token ID with `token.id`.
+      // Get the token ID to your server-side code for use.
+    }
+  });
+  
+  document.getElementById('donate_one').addEventListener('click', function(e) {
+    // Open Checkout with further options:
+    handler.open({
+      image: '/images/kumiko.svg',
+      name: 'Fine Woodworking Index',
+      description: 'Donation',
+      amount: 100,
+      zipCode: true
+    });
+    e.preventDefault();
+  });
+  
+  document.getElementById('donate_ten').addEventListener('click', function(e) {
+    // Open Checkout with further options:
+    handler.open({
+      image: '/images/kumiko.svg',
+      name: 'Fine Woodworking Index',
+      description: 'Donation',
+      amount: 1000,
+      zipCode: true
+    });
+    e.preventDefault();
+  });
+  
+  // Close Checkout on page navigation:
+  window.addEventListener('popstate', function() {
+    handler.close();
+  });
