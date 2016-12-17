@@ -1,10 +1,10 @@
-- if (current.source == 'index') {
+- if (current.source == 'index' || current.source == 'about') {
   .big-spacer
 -}
 
 .top
   center
-    - if (current.source == 'index') {
+    - if (current.source == 'index' || current.source == 'about') {
     a(href='/')
       img(src='/images/kumiko.svg', width="200px")#top-img
     -}
