@@ -31,10 +31,14 @@ $(document).ready(function () {
   $('#current-issue').click(function(){
     $('.big-spacer').css('display','none');
     $('#top-img').css('display','none');
-    
+
     $('#fww').show();
     $('#fww_wrapper').show();
-    // oTable.search($(this).val()).draw() ;
+    $(window).on('hashchange', function() {
+      var hash = window.location.hash.substr(1);
+      oTable.search(hash).draw();
+      $('#filter').val(hash);
+    });
   });
   
   var hash = window.location.hash.substr(1);
@@ -44,15 +48,18 @@ $(document).ready(function () {
     $("#filter").val(hash);
     $('#fww').show();
     $('#fww_wrapper').show();
-    oTable.columns( 6 ).search(hash).draw();
+    oTable.search(hash).draw();
+    $('#filter').val(hash);
   }
-  else if(hash == "current-issue"){
-    $('.big-spacer').css('display','none');
-    $('#top-img').css('display','none');
-    $("#filter").val(hash);
-    $('#fww').show();
-    $('#fww_wrapper').show();
-  }
+  // else if(hash == "current-issue"){
+  //   $('.big-spacer').css('display','none');
+  //   $('#top-img').css('display','none');
+  //   $("#filter").val(hash);
+  //   $('#fww').show();
+  //   $('#fww_wrapper').show();
+  //   oTable.search('259').draw();
+  //   $('#filter').val('259');
+  // }
 
   // $('table th:nth-child(4), table td:nth-child(4)').addClass('hidden-xs');
   // $('table th:nth-child(5), table td:nth-child(5)').addClass('hidden-xs');
