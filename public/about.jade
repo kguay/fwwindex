@@ -10,9 +10,8 @@ h1 Donations
 
 p I have spent quite a bit of time designing, building, and populating Fine Woodworking Index with content. I pay for the domain registration and hosting out of my pocket. Any donations would go towards hosting, maintaining, and improving this website so that everyone can continue to use it.
 
-script(src='https://checkout.stripe.com/checkout.js')
-button#donate_one $1
-button#donate_ten $10
+//- button#donate_one $1
+//- button#donate_ten $10
 
 h1 Print Edition (future goal)
 
@@ -41,6 +40,8 @@ p Feel free to contact me with any suggestions or comments. I manage everything 
 
 .big-spacer
 
+script(src='https://checkout.stripe.com/checkout.js')
+
 script.
   var handler = StripeCheckout.configure({
     key: 'pk_test_qHSHrVaUUKoMFkMn2n95Lhu7',
@@ -64,17 +65,17 @@ script.
     e.preventDefault();
   });
   
-  document.getElementById('donate_ten').addEventListener('click', function(e) {
-    // Open Checkout with further options:
-    handler.open({
-      image: '/images/kumiko.svg',
-      name: 'Fine Woodworking Index',
-      description: 'Donation',
-      amount: 1000,
-      zipCode: true
-    });
-    e.preventDefault();
-  });
+  // document.getElementById('donate_ten').addEventListener('click', function(e) {
+  //   // Open Checkout with further options:
+  //   handler.open({
+  //     image: '/images/kumiko.svg',
+  //     name: 'Fine Woodworking Index',
+  //     description: 'Donation',
+  //     amount: 1000,
+  //     zipCode: true
+  //   });
+  //   e.preventDefault();
+  // });
   
   // Close Checkout on page navigation:
   window.addEventListener('popstate', function() {
