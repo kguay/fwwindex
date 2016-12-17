@@ -1,0 +1,35 @@
+.lower
+  center
+    input#filter.search(type='text', placeholder='keyword, title, author, year', onfocus="this.placeholder = ''; this.select()", onblur="this.placeholder = 'keyword, title, author, year';")
+    br
+    br
+    #home
+      a(href='#current-issue')#current-issue current issue
+      | &nbsp; &nbsp;
+      a(href='topics.html') topics (beta)
+      | &nbsp; &nbsp;
+      a(href='about.html') about
+
+table#fww.table.table-hover.display(style='display:none;')
+  thead
+    tr
+      th title
+      th author
+      th issue
+      th.hidden-xs month
+      th.hidden-xs year
+      th page
+      //- th.hidden id
+  tbody.searchable
+    - var slug = Object.keys(public._data);
+    - for(var i=0; i<slug.length; i++) {
+      tr
+        td #{ public._data[slug[i]].title }
+        td #{ public._data[slug[i]].author }
+        td #{ public._data[slug[i]].issue }
+        td.hidden-xs #{ public._data[slug[i]].month }
+        td.hidden-xs #{ public._data[slug[i]].year }
+        td #{ public._data[slug[i]].page }
+        // td.hidden #{ public._data[slug[i]].issue } #{ public._data[slug[i]].page }
+    - }
+    

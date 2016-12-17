@@ -30,6 +30,10 @@ h3 {
   font-size: 1.2em;
 }
 
+.hidden {
+  display: none !important;
+}
+
 #about_link,
 #print_link,
 #donate_link {
@@ -47,6 +51,9 @@ h1.title > a {
   }
 }
 
+h1.title > a:link,
+h1.title > a:visited,
+h1.title > a:active,
 h1.title > a:hover {
   text-decoration: none !important;
 }
@@ -78,8 +85,17 @@ th.sorted-desc::after {
     font-size: 0.9em;
 }
 
+.oneliner{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .spacer {
-  min-height: 70px;
+  min-height: 30px;
+}
+.big-spacer {
+  min-height: 100px;
 }
 
 td {
@@ -110,3 +126,9 @@ input.search:focus:-moz-placeholder {/* Firefox 18- */ color: $blue;}
 input.search:focus::-moz-placeholder { /* Firefox 19+ */ color: $blue;}
 input.search:focus:-ms-input-placeholder {color: $blue;}
 
+/** Kumiko **/
+
+.piece:hover {
+  stroke: #ccc;
+//  stroke-width: 8;
+}
