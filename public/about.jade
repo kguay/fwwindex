@@ -10,8 +10,31 @@ h1 Donations
 
 p I have spent quite a bit of time designing, building, and populating Fine Woodworking Index with content. I pay for the domain registration and hosting out of my pocket. Any donations would go towards hosting, maintaining, and improving this website so that everyone can continue to use it.
 
-//- button#donate_one $1
-//- button#donate_ten $10
+.row
+  .col-sm-3
+    form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+      input(type='hidden', name='cmd', value='_s-xclick')
+      input(type='hidden', name='hosted_button_id', value='5BNVQ27TLB72U')
+      button(name='submit', alt='PayPal - The safer, easier way to pay online!', formtarget="_blank").btn.btn-default Donate $5 with PayPal
+
+  .col-sm-3
+    form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+      input(type='hidden', name='cmd', value='_s-xclick')
+      input(type='hidden', name='hosted_button_id', value='FD8V9FT5Y8JN4')
+      button(name='submit', alt='PayPal - The safer, easier way to pay online!', formtarget="_blank").btn.btn-default Donate $10 with PayPal
+      
+  .col-sm-3
+    form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+      input(type='hidden', name='cmd', value='_s-xclick')
+      input(type='hidden', name='hosted_button_id', value='DCG2AWSSBTHNG')
+      button(name='submit', alt='PayPal - The safer, easier way to pay online!', formtarget="_blank").btn.btn-default Donate $25 with PayPal
+  .col-sm-3
+    form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+      input(type='hidden', name='cmd', value='_s-xclick')
+      input(type='hidden', name='hosted_button_id', value='V46E9EKDF4AC6')
+      button(name='submit', alt='PayPal - The safer, easier way to pay online!', formtarget="_blank").btn.btn-default Donate Any Amount with PayPal
+      
+
 
 h1 Print Edition (future goal)
 
@@ -38,50 +61,47 @@ p Feel free to contact me with any suggestions or comments. I manage everything 
    a(href='mailto:%6bevin@finewoodworkingi%6edex%2ec%6f%6d', target="_blank") kevin@finewoodworkingindex.com
 
 
-form(action='https://php.kevinguay.com/pay.php', method='POST')
-  script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_qHSHrVaUUKoMFkMn2n95Lhu7', data-amount='999', data-name='Finewoodworkingindex', data-description='Widget', data-image='https://stripe.com/img/documentation/checkout/marketplace.png', data-locale='auto')
-
 
 .big-spacer
 
-script(src='https://checkout.stripe.com/checkout.js')
-
-script.
-  var handler = StripeCheckout.configure({
-    key: 'pk_test_qHSHrVaUUKoMFkMn2n95Lhu7',
-    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-    locale: 'auto',
-    token: function(token) {
-      // You can access the token ID with `token.id`.
-      // Get the token ID to your server-side code for use.
-    }
-  });
-  
-  document.getElementById('donate_one').addEventListener('click', function(e) {
-    // Open Checkout with further options:
-    handler.open({
-      image: '/images/kumiko.svg',
-      name: 'Fine Woodworking Index',
-      description: 'Donation',
-      amount: 100,
-      zipCode: true
-    });
-    e.preventDefault();
-  });
-  
-  // document.getElementById('donate_ten').addEventListener('click', function(e) {
-  //   // Open Checkout with further options:
-  //   handler.open({
-  //     image: '/images/kumiko.svg',
-  //     name: 'Fine Woodworking Index',
-  //     description: 'Donation',
-  //     amount: 1000,
-  //     zipCode: true
-  //   });
-  //   e.preventDefault();
-  // });
-  
-  // Close Checkout on page navigation:
-  window.addEventListener('popstate', function() {
-    handler.close();
-  });
+// script(src='https://checkout.stripe.com/checkout.js')
+//
+// script.
+//   var handler = StripeCheckout.configure({
+//     key: 'pk_test_qHSHrVaUUKoMFkMn2n95Lhu7',
+//     image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+//     locale: 'auto',
+//     token: function(token) {
+//       // You can access the token ID with `token.id`.
+//       // Get the token ID to your server-side code for use.
+//     }
+//   });
+//
+//   document.getElementById('donate_one').addEventListener('click', function(e) {
+//     // Open Checkout with further options:
+//     handler.open({
+//       image: '/images/kumiko.svg',
+//       name: 'Fine Woodworking Index',
+//       description: 'Donation',
+//       amount: 100,
+//       zipCode: true
+//     });
+//     e.preventDefault();
+//   });
+//
+//   // document.getElementById('donate_ten').addEventListener('click', function(e) {
+//   //   // Open Checkout with further options:
+//   //   handler.open({
+//   //     image: '/images/kumiko.svg',
+//   //     name: 'Fine Woodworking Index',
+//   //     description: 'Donation',
+//   //     amount: 1000,
+//   //     zipCode: true
+//   //   });
+//   //   e.preventDefault();
+//   // });
+//
+//   // Close Checkout on page navigation:
+//   window.addEventListener('popstate', function() {
+//     handler.close();
+//   });
