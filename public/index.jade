@@ -24,7 +24,12 @@ table#fww.table.table-hover.display(style='display:none;')
     - var slug = Object.keys(public._data);
     - for(var i=0; i<slug.length; i++) {
       tr
-        td #{ public._data[slug[i]].title }
+        - if ( public._data[slug[i]].url) {
+          td 
+            a(href="https://www.finewoodworking.com/#{ public._data[slug[i]].url }", target="_blank") #{ public._data[slug[i]].title }
+        - } else {
+          td #{ public._data[slug[i]].title }
+        - }
         td #{ public._data[slug[i]].author }
         td #{ public._data[slug[i]].issue }
         td.hidden-xs #{ public._data[slug[i]].month }
