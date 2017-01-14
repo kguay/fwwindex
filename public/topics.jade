@@ -8,7 +8,7 @@
         - if(! ("tag" in public._data[slug[i]].tags)) {
           - for(tag in public._data[slug[i]].tags) {
             li
-              span.tag #{ tag } 
+              a.tag(href="/##{ tag } ") #{ tag } 
               span.location #{ public._data[slug[i]].issue }:#{ public._data[slug[i]].page }
           - }
         - }
