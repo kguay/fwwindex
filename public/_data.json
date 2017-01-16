@@ -1911,48 +1911,297 @@
  },
  
  {
-   "title": "title",
-   "author": "Matt",
+   "title": "Greene and Greene: Master the Details",
+   "author": "Martin McClendon",
    "issue": 231,
-   "month": "May",
-   "year": 2012,
-   "page": 12,
+   "month": "February",
+   "year": 2013,
+   "page": 32,
    "url": "",
-   "tags": {"Box":""}
+   "tags": {"Greene":""}
  },
  {
-   "title": "title",
-   "author": "Matt",
+   "title": "Best Way to Fit Tenons",
+   "author": "Chris Gochnour",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 40,
+   "url": "",
+   "tags": {"Tenons":""}
+ },
+ {
+   "title": "Tool Test: Shoulder Planes, Block Rabbit Planes",
+   "author": "Chris Gochnour",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 44,
+   "url": "",
+   "tags": {"Tool Test":"","Hand Planes":"","Block Plane":""}
+ },
+ {
+   "title": "Dovetails on the Tablesaw",
+   "author": "Gregory Paolini",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 51,
+   "url": "",
+   "tags": {"Dovetails":"","Table Saw":"","Joinery":""}
+ },
+ {
+   "title": "The Soul of Nakashima",
+   "author": "Jonathan Binzen",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 51,
+   "url": "",
+   "tags": {"Nakashima":""}
+ },
+ {
+   "title": "Supercharge Your Rip Fence",
+   "author": "Bob Van Dyke",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 56,
+   "url": "",
+   "tags": {"Fence":""}
+ },
+ {
+   "title": "Build a Shaker Stool with Hand Tools",
+   "author": "Christian Becksvoort",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 62,
+   "url": "",
+   "tags": {"Shaker":"","Stool":"","Hand Tools":""}
+ },
+ {
+   "title": "What the Experts Don't Tell You About Turning Furniture Parts",
+   "author": "Peter Galbert",
+   "issue": 231,
+   "month": "February",
+   "year": 2013,
+   "page": 68,
+   "url": "",
+   "tags": {"Turning":""}
+ },
+ {
+   "title": "Smart Shop Storage",
+   "author": "John White",
    "issue": 230,
-   "month": "May",
+   "month": "December",
    "year": 2012,
-   "page": 12,
+   "page": 32,
    "url": "",
-   "tags": {"Box":""}
+   "tags": {"Storage":""}
  },
- 
  {
-   "title": "title",
-   "author": "Matt",
+   "title": Tool Test: 18-volt Brushless Impact Drivers",
+   "author": "Eric Constans",
+   "issue": 230,
+   "month": "December",
+   "year": 2012,
+   "page": 42,
+   "url": "",
+   "tags": {"Tool Test":"","Drivers":""}
+ },
+ {
+   "title": "Modified Roubo Is the Ultimate Workbench",
+   "author": "Jeff Miller",
+   "issue": 230,
+   "month": "December",
+   "year": 2012,
+   "page": 46,
+   "url": "",
+   "tags": {"Workbench":""}
+ },
+ {
+   "title": "Tool Test: Bandsaw Fences",
+   "author": "Asa Christiana",
+   "issue": 230,
+   "month": "December",
+   "year": 2012,
+   "page": 55,
+   "url": "",
+   "tags": {"Tool Test":"","Bandsaw":"","Fence":""}
+ },
+ {
+   "title": "Lee Valley Turns 35",
+   "author": "Jonathan Binzen",
+   "issue": 230,
+   "month": "December",
+   "year": 2012,
+   "page": 60,
+   "url": "",
+   "tags": {"Lee Valley":""}
+ },
+ {
+   "title": "Tune Up Any Jointer",
+   "author": "Roland Johnson",
+   "issue": 230,
+   "month": "December",
+   "year": 2012,
+   "page": 64,
+   "url": "",
+   "tags": {"Jointer":""}
+ },
+ {
+   "title": "Build Your Own Spray Booth",
+   "author": "Geoff Guzynski",
+   "issue": 230,
+   "month": "December",
+   "year": 2012,
+   "page": 70,
+   "url": "",
+   "tags": {"Finish":"","Spray":""}
+ },
+
+ {
+   "title": "Perfect Tapers on the Tablesaw",
+   "author": "Steve Latta",
    "issue": 229,
-   "month": "May",
+   "month": "Winter",
    "year": 2012,
-   "page": 12,
+   "page": 30,
    "url": "",
-   "tags": {"Box":""}
+   "tags": {"Taper":""}
+ },
+ {
+   "title": "Float the Top",
+   "author": "Timothy Rousseau",
+   "issue": 229,
+   "month": "Winter",
+   "year": 2012,
+   "page": 36,
+   "url": "",
+   "tags": {"Table":""}
+ },
+ {
+   "title": "Tool Test: Squares",
+   "author": "Philip C. Lowe",
+   "issue": 229,
+   "month": "Winter",
+   "year": 2012,
+   "page": 70,
+   "url": "",
+   "tags": {"Tool Test":"","Squares":""}
+ },
+ {
+   "title": "Fine Furniture from Reclaimed Wood",
+   "author": "John Tetreault",
+   "issue": 229,
+   "month": "Winter",
+   "year": 2012,
+   "page": 48,
+   "url": "",
+   "tags": {"Reclaimed":""}
+ },
+ {
+   "title": "Master the Plunge Router",
+   "author": "Gregory Paolini",
+   "issue": 229,
+   "month": "Winter",
+   "year": 2012,
+   "page": 56,
+   "url": "",
+   "tags": {"Router":""}
+ },
+ {
+   "title": "Built-ins that Fit Like a Glove",
+   "author": "Greg Zall",
+   "issue": 229,
+   "month": "Winter",
+   "year": 2012,
+   "page": 62,
+   "url": "",
+   "tags": {"Builtin":""}
+ },
+ {
+   "title": "Classic Shaker",
+   "author": "Christian Becksvoort",
+   "issue": 229,
+   "month": "Winter",
+   "year": 2012,
+   "page": 67,
+   "url": "",
+   "tags": {"Shaker":""}
  },
  
  {
-   "title": "title",
-   "author": "Matt",
+   "title": "How to Fix Flaws and Mistakes",
+   "author": "Mark Schofield",
    "issue": 228,
-   "month": "May",
+   "month": "October",
    "year": 2012,
-   "page": 12,
+   "page": 30,
    "url": "",
-   "tags": {"Box":""}
+   "tags": {"Mistakes":""}
  },
- 
+ {
+   "title": "Tool Test: Block Planes",
+   "author": "Mario Rodriguez",
+   "issue": 228,
+   "month": "October",
+   "year": 2012,
+   "page": 38,
+   "url": "",
+   "tags": {"Tool Test":"","Hand Tools":"","Block Plane":""}
+ },
+ {
+   "title": "Arts and Crafts with an English Accent",
+   "author": "Nancy Hiller",
+   "issue": 228,
+   "month": "October",
+   "year": 2012,
+   "page": 44,
+   "url": "",
+   "tags": {"Arts and Crafts":""}
+ },
+ {
+   "title": "Ebony, the Dark Knight of Details",
+   "author": "Garrett Hack",
+   "issue": 228,
+   "month": "October",
+   "year": 2012,
+   "page": 54,
+   "url": "",
+   "tags": {"Ebony":""}
+ },
+ {
+   "title": "Perfect Profiles on the Router Table",
+   "author": "Alan Turner",
+   "issue": 228,
+   "month": "October",
+   "year": 2012,
+   "page": 58,
+   "url": "",
+   "tags": {"Router":""}
+ },
+ {
+   "title": "Secrets of Segmented Turning",
+   "author": "Art Breese",
+   "issue": 228,
+   "month": "October",
+   "year": 2012,
+   "page": 60,
+   "url": "",
+   "tags": {"Turning":""}
+ },
+ {
+   "title": "Revive a Finish",
+   "author": "Jeff Jewitt",
+   "issue": 228,
+   "month": "October",
+   "year": 2012,
+   "page": 67,
+   "url": "",
+   "tags": {"Finish":""}
+ },
  {
    "title": "Tool Test: Got Rust?",
    "author": "Thomas McKenna",
