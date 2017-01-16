@@ -7,7 +7,7 @@
       - for(var i=0; i<slug.length; i++) {
         - if( public._data[slug[i]].author != "n/a" ) {
           li
-            span.tag #{ public._data[slug[i]].author } 
+            a.tag(href="/##{ public._data[slug[i]].author } ") #{ public._data[slug[i]].author } 
             span.location #{ public._data[slug[i]].issue }:#{ public._data[slug[i]].page }
         - }
       - }

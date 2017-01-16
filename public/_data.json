@@ -2266,14 +2266,84 @@
  
  
  {
-   "title": "title",
-   "author": "Chris",
+   "title": "Ultimate One-Man Shop",
+   "author": "Philip Houck",
    "issue": 223,
-   "month": "June",
+   "month": "Winter",
    "year": 2011,
-   "page": 18,
+   "page": 30,
    "url": "",
-   "tags": {"tag":""}
+   "tags": {"Shop":""}
+ },
+ {
+   "title": "Segmented Cutterheads Change the Game",
+   "author": "Roland Johnson",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 38,
+   "url": "",
+   "tags": {"Planer":""}
+ },
+ {
+   "title": "House Your Tools in High Style",
+   "author": "Chris Cochnour",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 44,
+   "url": "",
+   "tags": {"Storage":""}
+ },
+ {
+   "title": "A Revolution in Dust Collection",
+   "author": "Asa Christiana",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 52,
+   "url": "",
+   "tags": {"Dust Collection":""}
+ },
+ {
+   "title": "Divide and Conquer",
+   "author": "Michael Pekovich",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 60,
+   "url": "",
+   "tags": {"Drawer":""}
+ },
+ {
+   "title": "The Wired Workbench",
+   "author": "John White",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 62,
+   "url": "",
+   "tags": {"Workbench":""}
+ },
+ {
+   "title": "Tool Test: Shop Vaccuums",
+   "author": "Asa Christiana",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 70,
+   "url": "",
+   "tags": {"Tool Test":"","Vaccuum":""}
+ },
+ {
+   "title": "Pivoting Plywood Cart",
+   "author": "Michael Puryear",
+   "issue": 223,
+   "month": "Winter",
+   "year": 2011,
+   "page": 76,
+   "url": "",
+   "tags": {"Storage":""}
  },
  
  {
