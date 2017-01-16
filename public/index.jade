@@ -35,7 +35,8 @@ table#fww.table.table-hover.display(style='display:none;')
         - }
         td 
           a(href="/##{ public._data[slug[i]].author }") #{ public._data[slug[i]].author }
-        td #{ public._data[slug[i]].issue }
+        td 
+          a(href="/##{ public._data[slug[i]].issue }") #{ public._data[slug[i]].issue }
         td.hidden-xs #{ public._data[slug[i]].month }
         td.hidden-xs #{ public._data[slug[i]].year }
         td #{ public._data[slug[i]].page }

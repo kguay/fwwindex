@@ -51,6 +51,16 @@ $(document).ready(function () {
     oTable.search(hash).draw();
     $('#filter').val(hash);
   }
+  
+  window.addEventListener('popstate', function(event)
+  {
+      if(window.location.hash) {
+        var hash = window.location.hash.substr(1);
+        $("#filter").val(hash);
+        oTable.search(hash).draw();
+      }
+  });
+  
   // else if(hash == "current-issue"){
   //   $('.big-spacer').css('display','none');
   //   $('#top-img').css('display','none');
