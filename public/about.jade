@@ -67,12 +67,12 @@ form(role='form', method='post', action='https://www.finewoodworkingindex.com/ph
   fieldset
     .form-group
       .col-sm-6
-        input#name.form-control(type='name', placeholder='Name')
+        input#name.form-control(name="name", type='name', placeholder='Name')
       .col-sm-6
-        input#email.form-control(type='email', placeholder='Email')
+        input#email.form-control(name="email", type='email', placeholder='Email')
     .form-group
       .col-sm-12
-        textarea.form-control(rows="5", placeholder="Note")
+        textarea.form-control(name="message", rows="5", placeholder="Note")
     .form-group
       .col-sm-12
         button.btn.btn-success(type='submit') Submit
