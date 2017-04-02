@@ -1,4 +1,75 @@
 [
+ # {
+ #   "title": "Title",
+ #   "author": "Author",
+ #   "issue": 261,
+ #   "month": "May",
+ #   "year": 2017,
+ #   "page": 34,
+ #   "url": "url",
+ #   "tags": {"tag":""}
+ # },
+ {
+   "title": "Shaker Sewing Stand",
+   "author": "Christian Becksvoort",
+   "issue": 261,
+   "month": "May",
+   "year": 2017,
+   "page": 34,
+   "url": "url",
+   "tags": {"Shaker":"","Table":""}
+ },
+ {
+   "title": "Shopmade Cutting Gauge",
+   "author": "Bob Van Dyke",
+   "issue": 261,
+   "month": "May",
+   "year": 2017,
+   "page": 40,
+   "url": "url",
+   "tags": {"Gauge":"","Shop made":""}
+ },
+ {
+   "title": "Clever Clamping Tricks",
+   "author": "Timothy Coleman",
+   "issue": 261,
+   "month": "May",
+   "year": 2017,
+   "page": 46,
+   "url": "url",
+   "tags": {"Clamp":""}
+ },
+ {
+   "title": "Easy Knife Hinges",
+   "author": "Craig Thibodeau",
+   "issue": 261,
+   "month": "May",
+   "year": 2017,
+   "page": 51,
+   "url": "url",
+   "tags": {"Hinges":""}
+ },
+ {
+   "title": "Mid-Century Credenza",
+   "author": "Libby Schrum",
+   "issue": 261,
+   "month": "May",
+   "year": 2017,
+   "page": 56,
+   "url": "url",
+   "tags": {"tag":""}
+ },
+ {
+   "title": "Thick Tabletops from Thin Stock",
+   "author": "Mark Edmundson",
+   "issue": 261,
+   "month": "May",
+   "year": 2017,
+   "page": 66,
+   "url": "url",
+   "tags": {"tag":""}
+ },
+ 
  {
    "title": "Arts & Crafts Bed",
    "author": "Kevin Rodel",
