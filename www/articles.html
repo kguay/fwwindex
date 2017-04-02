@@ -1,0 +1,22 @@
+<!-- © (copyright) 2016 Kevin C. Guay (www.kevinguay.com)--><!-- If you wish to copy and redistribute part of this website, please contact the webmaster.--><!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"><link rel="apple-touch-icon" sizes="57x57" href="/images/fav/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/images/fav/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/images/fav/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/images/fav/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/images/fav/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/images/fav/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/images/fav/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/images/fav/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/images/fav/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/fav/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png"><link rel="manifest" href="/images/fav/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><!-- Metadata--><meta name="keywords" content="finewoodworking, fine woodworking, fine, woodworking, woodwork, index, articles, fine woodworking magazine, magazine, articles"><meta name="author" content="Kevin C Guay"><meta name="description" content="An up-to-date, fast, searchable index of Fine Woodworking Magazine articles going back to issue number one."><title>Fine Woodworking Index</title><link rel="stylesheet" href="/css/bootstrap_compiled/bootstrap.css"/><link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/><link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"/><link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/><script src="/js/jquery-1.12.2.min.js" type="text/javascript"></script><script src="/js/bootstrap.min.js" type="text/javascript"></script><script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js" type="text/javascript"></script><script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap4.min.js" type="text/javascript"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+//- ga('create', 'UA-89150940-1', 'auto');
+//- ga('send', 'pageview');
+
+ga('create', 'UA-XXX-X', {'allowAnchor': true});
+ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+
+ga('create', 'UA-XXX-X', {'allowAnchor': true});
+ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+
+jQuery(document).ready(function () {
+	jQuery('.menu a').click(function(){
+		var match = jQuery(this).attr('href').match(/#\S+/);
+		ga('send', 'pageview', location.pathname + match[0]);
+	});
+});</script></head><body><div class="top"><center><h1 class="title"><a href="/"> Fine Woodworking Index</a></h1></center></div><div class="lower"><center><div id="home"><a href="/#259" id="current-issue">current issue</a>&nbsp; &nbsp;<a href="topics.html">topics (beta)</a>&nbsp; &nbsp;<a href="about.html">about</a></div></center></div><div class="spacer"></div><div class="container"><h1>Article Index</h1><table class="table table-hover"><thead><tr><th>Title</th><th>Author</th><th>Issue</th><th>Year</th><th>Page</th></tr></thead><tdbody><tr><td>This is a title</td><td>Kevin Guay</td><td>243</td><td>2013</td><td>43</td></tr><tr><td>A title this is one</td><td>Chris Becksvoort</td><td>102</td><td>2003</td><td>52</td></tr></tdbody></table></div><!-- != partial("_include/_footer")-->
+
+</body></html>
