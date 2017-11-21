@@ -1,5 +1,75 @@
 [
   {
+   "title": "Build a Stout Workbench",
+   "author": "Chris Gochnour",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 34,
+   "url": "2017/10/25/how-to-build-a-heavy-duty-workbench",
+   "tags": {"Workbench":""}
+  },
+  {
+   "title": "Keep Your Tools Out in the Open",
+   "author": "Jim Puterbaugh",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 44,
+   "url": "2017/11/01/open-workshop-storage-hand-tool-power-tools",
+   "tags": {"Hand Tools":"", "Storage":""}
+  },
+  {
+   "title": "Tune Your Tablesaw",
+   "author": "Ellen Kaspern",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 48,
+   "url": "2017/11/01/tune-your-tablesaw",
+   "tags": {"Tablesaw":""}
+  },
+  {
+   "title": "Heating and Cooling Your Shop",
+   "author": "Barry NM Dima",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 53,
+   "url": "2017/11/01/265-heating-cooling-shop",
+   "tags": {"Shop":""}
+  },
+  {
+   "title": "Superb Sawhorses",
+   "author": "Len Cullum",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 58,
+   "url": "2017/11/01/japanese-sawhorses",
+   "tags": {"Sawhorse":""}
+  },
+  {
+   "title": "Work at the Right Height",
+   "author": "Christian Becksvoort",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 68,
+   "url": "2017/11/01/work-at-the-right-height",
+   "tags": {"Workbench":""}
+  },
+  {
+   "title": "The Snug, Unplugged Workshop",
+   "author": "David Fisher",
+   "issue": 265,
+   "month": "Winter",
+   "year": 2017,
+   "page": 72,
+   "url": "2017/11/01/david-fishers-snug-unplugged-workshop",
+   "tags": {"Workshop":""}
+  },
+  {
    "title": "A Classic Spin on Curved Aprons",
    "author": "Raymond Rinan",
    "issue": 264,
