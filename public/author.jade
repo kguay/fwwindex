@@ -36,11 +36,28 @@ style.
     margin-top: 0;
     color: #666;
   }
-  .col {
+  @media(min-width:990px){
+    .col {
       -webkit-column-count: 3; /* Chrome, Safari, Opera */
       -moz-column-count: 3; /* Firefox */
       column-count: 3;
+    }
   }
+  @media(max-width:990px){
+    .col {
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+    }
+  }
+  @media(max-width:600px){
+    .col {
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+    }
+  }
+  
   .tag {
     color: #333;
   }
